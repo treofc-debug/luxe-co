@@ -8,8 +8,8 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      {/* Left Banner: New Drop */}
-      <div className="relative h-[340px] md:h-[420px] rounded-3xl overflow-hidden group cursor-pointer" onClick={onCtaClick}>
+      {/* Banner Esquerdo: New Drop */}
+      <div className="relative h-[340px] md:h-[420px] rounded-3xl overflow-hidden group cursor-pointer shadow-sm" onClick={onCtaClick}>
         <img 
           src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80&w=1200" 
           alt="New Drop" 
@@ -32,9 +32,9 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         </div>
       </div>
 
-      {/* Right Banner: Discount with Ribbon */}
-      <div className="relative h-[340px] md:h-[420px] rounded-3xl overflow-hidden bg-[#E9EEF2] flex items-center justify-center text-center p-8 group">
-        {/* Highlight Ribbon */}
+      {/* Banner Direito: Desconto com Fita (Ribbon) */}
+      <div className="relative h-[340px] md:h-[420px] rounded-3xl overflow-hidden bg-[#E9EEF2] flex items-center justify-center text-center p-8 group shadow-sm">
+        {/* Fita de Destaque */}
         <div className="absolute top-0 right-0 overflow-hidden w-32 h-32 z-10 pointer-events-none">
           <div className="absolute top-6 -right-8 w-40 py-1 bg-[#D12F2F] text-white text-[10px] font-black uppercase tracking-[0.2em] shadow-lg rotate-45 flex items-center justify-center">
             Oferta Especial

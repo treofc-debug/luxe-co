@@ -13,9 +13,17 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Esconder o root até que o React carregue para evitar flash de tela branca estranho */
-        #root:empty {
-            display: none;
+        /* Estado de carregamento visual */
+        #root:empty::before {
+            content: 'Carregando Coleção...';
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #ccc;
         }
     </style>
     <!-- Babel para compilar TSX no navegador -->
@@ -34,7 +42,7 @@
 </head>
 <body class="bg-white text-slate-900">
     <div id="root"></div>
-    <!-- Ponto de entrada do app -->
-    <script type="text/babel" data-type="module" src="index.tsx"></script>
+    <!-- Ponto de entrada com caminho relativo explícito ./ -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
 </body>
 </html>
