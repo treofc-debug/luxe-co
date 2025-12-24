@@ -1,11 +1,11 @@
 
 import React, { useState, useCallback, useMemo } from 'react';
-import { Header } from './components/Header';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { ProductGrid } from './components/ProductGrid';
-import { CartDrawer } from './components/CartDrawer';
-import { Product, CartItem, Category } from './types';
+import { Header } from './components/Header.tsx';
+import { Navbar } from './components/Navbar.tsx';
+import { Hero } from './components/Hero.tsx';
+import { ProductGrid } from './components/ProductGrid.tsx';
+import { CartDrawer } from './components/CartDrawer.tsx';
+import { Product, CartItem } from './types.ts';
 
 const INITIAL_PRODUCTS: Product[] = [
   { id: 1, name: 'Camiseta Premium Oversized', price: 129.90, category: 'Streetwear', image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800' },

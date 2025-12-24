@@ -12,10 +12,10 @@ export const Header: React.FC<HeaderProps> = ({ onCartOpen, cartCount, searchTer
   return (
     <header className="sticky top-0 z-40 w-full bg-white border-b border-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-8">
-        {/* Logo with Red Border */}
+        {/* Logo with Red Border Frame */}
         <div className="flex-shrink-0">
-          <div className="">
-            <h1 className="text-2xl font-black tracking-tighter text-black leading-tight">
+          <div className="border-[3px] border-[#D12F2F] px-4 py-1.5">
+            <h1 className="text-2xl font-black tracking-tighter text-black leading-none">
               LUXE & CO.
             </h1>
           </div>
